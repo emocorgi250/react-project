@@ -16,8 +16,8 @@ class FavList extends Component {
         favList.forEach((fooditem) => (total += fooditem.price));
         return (
             <Container>
-            <h2>Total Price: ${total.toLocaleString("en-US")}
-            </h2>
+            <h1>Favorite List:</h1>
+            <h3>Total Price: ${total.toLocaleString("en-US")}</h3>
             <Row >
                 {favList.map((fooditem) =>(
                 <Col key={fooditem.id}>
